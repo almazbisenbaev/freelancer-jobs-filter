@@ -1,0 +1,23 @@
+{
+  "name": "FL filter",
+  "version": "1.0",
+  "description": "",
+
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+
+  "icons": {
+    "16": "images/bird16.png",
+    "32": "images/bird32.png",
+    "48": "images/bird48.png",
+    "128": "images/bird128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.freelancer.com/search/*"],
+      "js": ["script.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
